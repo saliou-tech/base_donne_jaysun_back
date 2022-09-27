@@ -1,0 +1,84 @@
+#spring:
+#  mvc:
+#    pathmatch:
+#      matching-strategy: ant_path_matcher
+#  main:
+#    allow-circular-references: true
+#  datasource:
+#    url: jdbc:mysql://localhost:3306/anbiko
+##    url: jdbc:mysql://localhost:3306/anbiko_DB
+#    username: root
+#    password: SSGtech@778169145
+#    # Enables execution of data-mysql.sql script
+#
+#    # Not required as we dont need to initialize dummy data in persistant database
+#    # Uncomment this when the database is recreated so dummy data is added. Comment it afterwards
+#    # initialization-mode: always
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#  jpa:
+#    hibernate:
+#      ddl-auto: update
+#    show-sql: true
+#    properties:
+#      hibernate:
+#        dialect: org.hibernate.dialect.MySQL8Dialect
+#  sql:
+#
+#    init:
+#      mode: always
+#logging:
+#  level:
+#    # info level for all java logs
+#    ROOT: info
+#    # debug level for all use defined code logs
+#    quincaillerieuserservice.quincaillerieuserservice: info
+## Enables discovery CLient eatures
+#
+#
+#
+#server:
+#  port: ${server_port:8080}
+#
+#
+#jwt:
+#  secret: ${jwt_secret:thisisathirtycharacterlongstring}
+#  expiration: 3600000
+
+spring:
+
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+  main:
+    allow-circular-references: true
+  datasource:
+    url: jdbc:mysql://localhost:3306/jaysun
+    username: root
+    password: root
+    # Enables execution of data-mysql.sql script
+
+    # Not required as we dont need to initialize dummy data in persistant database
+    # Uncomment this when the database is recreated so dummy data is added. Comment it afterwards
+    # initialization-mode: always
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL5Dialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+logging:
+  level:
+    # info level for all java logs
+    ROOT: info
+    # debug level for all use defined code logs
+    quincaillerieuserservice.quincaillerieuserservice: info
+# Enables discovery CLient eatures
+
+
+
+server:
+  port: ${server_port:8080}
+
+
+jwt:
+  secret: ${jwt_secret:thisisathirtycharacterlongstring}
+  expiration: 3600000
