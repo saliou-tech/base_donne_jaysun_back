@@ -38,6 +38,9 @@ public class Membre {
     @Column(length = 10)
     private String cellule;
     @NotBlank
+    @Column(length = 10)
+    private String profession;
+    @NotBlank
     @Column(length = 40)
     private String dateNaissance;
     @NotBlank
