@@ -20,38 +20,27 @@ public class Membre {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
    private long membre_id;
     @NotBlank
-    @Column(length = 40)
+
     private String nom;
  @NotBlank
- @Column(length = 40)
  private String prenom;
     @NotBlank
-    @Column(length = 40)
     private String email;
-    @Column(length = 50)
     @NotBlank
     private String adresse;
     @NotBlank
-    @Column(length = 10)
     private String telephone;
     @NotBlank
-    @Column(length = 10)
     private String cellule;
     @NotBlank
-    @Column(length = 10)
     private String profession;
     @NotBlank
-    @Column(length = 40)
     private String dateNaissance;
     @NotBlank
-    @Column(length = 40)
     private String lieuNaissance;
     @NotBlank
-    @Column(length = 40)
     private String numeroCarteElecteur;
-    @Column(length = 40)
     private String isMarried;
-    @Column(length = 40)
     private long nombreEnfant;
 
 
